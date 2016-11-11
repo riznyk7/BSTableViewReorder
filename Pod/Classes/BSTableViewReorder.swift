@@ -34,8 +34,8 @@ open class BSTableViewReorder: UITableView, UIScrollViewDelegate {
     
     private var scrollRate: CGFloat = 0
     private var scrollDisplayLink: CADisplayLink?
-    private var currentIndexPath: IndexPath?
-    private var sourceIndexPath: IndexPath?
+    public var currentIndexPath: IndexPath?
+    public var sourceIndexPath: IndexPath?
     private var previousRelativeLocation = CGPoint.zero
     
     private var numberOfRowsInTable: Int {
